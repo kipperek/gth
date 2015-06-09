@@ -1,7 +1,69 @@
+@font-face {
+	font-family: Cinzel;
+	src: url("rsc/cinzel.otf") format("opentype");
+}
+@font-face {
+	font-family: Elegant;
+	src: url("rsc/elegant.otf") format("opentype");
+}
+
 body{
 	margin: 0;
 	padding: 0;
-	background: url(images/horsebg.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: url(images/horsebg.jpg) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+
+}
+
+.header{
+	text-align: center;
+	font-family: Cinzel;
+	padding:30px;
+	background: rgba(255,255,255,1);
+}
+
+.header>.logo{
+	height: 160px;
+	width: 160px;
+	border-radius: 100%;
+	border: 1px solid rgb(226, 226, 226);
+	vertical-align: middle;
+}
+.header>div{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left
+}
+.header>div>span{
+	display: block;
+	vertical-align: middle;
+	font-size: 50px;
+	margin-left:40px;
+}
+.header span.year-created{
+	font-size:20px;
+	font-weight: 600;
+	margin-left: 45px;
+}
+
+.body{
+	margin-top: 20px;
+	padding: 20px;
+	background: white;
+}
+
+.menu{
+	font-family: Elegant;
+	padding:10px;
+	background: rgba(255, 255, 255, 0.6);
+	text-align: center;
+	border-top: 1px solid rgb(226, 226, 226);
+	
+	font-size: 20px;
+}
+.menu>span{
+	margin: 0 10px;
 }
