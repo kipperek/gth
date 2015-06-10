@@ -10,7 +10,6 @@
 				$headerWrapper.height($header.height());
 				$header.addClass(fixedClass);
 			}else if($header.hasClass(fixedClass) && $doc.scrollTop() <= $headerWrapper.position().top){
-				$headerWrapper.height($header.height());
 				$header.removeClass(fixedClass);
 			}
 	};
