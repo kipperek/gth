@@ -55,22 +55,47 @@ body{
 	background: rgba(255, 255, 255, 0.6);
 	text-align: center;
 	border-top: 1px solid rgb(226, 226, 226);
+	border-bottom: 1px solid transparent;
 	font-size: 20px;
+
+	-webkit-transition: all 0.2s ease-in-out; /* Safari */
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
+
+
 .menu>span{
 	display: inline-block;
 	padding: 10px 15px;
 	cursor: pointer;
 	border-bottom: 1px solid transparent;
+	position: relative;
+	top:1px;
 
-	-webkit-transition: border-color 0.2s ease-in-out; /* Safari */
-	-moz-transition: border-color 0.2s ease-in-out;
-	-ms-transition: border-color 0.2s ease-in-out;
-	-o-transition: border-color 0.2s ease-in-out;
-    transition: border-color 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out; /* Safari */
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .menu>span:hover{
 	border-bottom: 1px solid #010fc7;
+}
+
+.menu.menu-fixed{
+	position:fixed;
+	top:0;
+	width: 100%;
+	background: white;
+	border-bottom: 1px solid rgb(226, 226, 226);
+	border-top: none;
+}
+
+.menu.menu-fixed>span {
+	padding: 5px 15px;
+	top: 0;
 }
 
 .wrapper{
@@ -84,7 +109,7 @@ body{
 	background: rgba(255, 255, 255, 0.9);
 	height: 1000px;
 	box-sizing: border-box;
-	margin-top: 20px;
+	margin-top: 18px;
 }
 
 .footer{
