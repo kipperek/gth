@@ -99,7 +99,7 @@ body{
 }
 
 .wrapper{
-	padding-bottom:20px;
+	padding-bottom:10px;
 }
 
 .body{
@@ -107,18 +107,86 @@ body{
 	padding: 20px;
 	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.9);
-	height: 1000px;
 	box-sizing: border-box;
 	margin-top: 18px;
 }
 
 .footer{
-	font-size: 14px;
+	font-size: 15px;
 	text-align: center;
-	margin-top:5px;
+	margin-top:10px;
+}
+.footer a, .footer a:link, .footer a:visited{
+	color: #010fc7;
+	text-decoration: none;
+}
+.footer a:hover{
+	text-decoration: underline;
+}
+.copy{
+	font-family: Arial;
 }
 
 h1, h2, h3, h4, h5{
 	font-family: Cinzel;
 	margin:0;
+	padding:0;
+	clear:both;
+}
+
+h1{
+	font-size: 2.5em;
+	text-align: center;
+}
+h1:after{
+	content: "";
+	display: block;
+	background: transparent url(images/szlaczek.gif) no-repeat;
+	height: 15px;
+	background-position: center;
+	background-size: 265px 15px;
+	margin-bottom: 10px;
+}
+
+.body p{
+	font-size: 20px;
+	text-indent: 50px;
+}
+
+.body p img{
+	width: 180px;
+  	float: left;
+  	margin: 5px;
+}
+.last-news{
+	text-align: center;
+	margin: 20px 0;
+}
+.last-news>div{
+	display: inline-block;
+}
+
+.last-news-row{
+	width: 250px;
+	text-align: left;
+	margin: 0 20px;
+	vertical-align: top;
+}
+.last-news-header{
+	font-weight: 600;
+	margin: 10px 0;
+}
+.last-news-content{
+	text-align: justify;
+	min-height: 140px;
+}
+.last-news-read-more{
+	margin-top:20px;
+	text-align: right;
+	font-size:0.9em;
+	color: #010fc7;
+}
+.last-news-read-more:hover{
+	text-decoration: underline;
+	cursor: pointer;
 }
