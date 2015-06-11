@@ -7,6 +7,15 @@
 	src: url("rsc/elegant.otf") format("opentype");
 }
 
+@font-face {
+	font-family: CinzelEot;
+	src: url("rsc/CinzelEot.eot");
+}
+@font-face {
+	font-family: ElegantEot;
+	src: url("rsc/ElegantEot.eot");
+}
+
 body{
 	margin: 0;
 	padding: 0;
@@ -15,12 +24,12 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-family: Elegant;
+	font-family: Elegant, ElegantEot;
 }
 
 .header{
 	text-align: center;
-	font-family: Cinzel;
+	font-family: Cinzel, CinzelEot;
 	padding:30px;
 	background: rgba(255,255,255,1);
 }
@@ -49,7 +58,7 @@ body{
 }
 
 .menu{
-	font-family: Elegant;
+	font-family: Elegant, ElegantEot;
 	
 	background: rgba(255, 255, 255, 0.6);
 	text-align: center;
@@ -133,7 +142,7 @@ body{
 }
 
 h1, h2, h3, h4, h5{
-	font-family: Cinzel;
+	font-family: Cinzel, CinzelEot;
 	margin:0;
 	padding:0;
 	clear:both;
