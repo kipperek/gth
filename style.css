@@ -16,6 +16,7 @@ body{
 	-o-background-size: cover;
 	background-size: cover;
 	font-family: Elegant;
+	font-size: 16px;
 }
 
 .header{
@@ -40,11 +41,12 @@ body{
 .header>div>span{
 	display: block;
 	vertical-align: middle;
-	font-size: 50px;
+	/*font-size: 50px;*/
+	font-size: 3.15em;
 	margin-left:40px;
 }
 .header span.year-created{
-	font-size:20px;
+	font-size:1.25em;
 	font-weight: 600;
 	margin-left: 45px;
 }
@@ -56,7 +58,7 @@ body{
 	text-align: center;
 	border-top: 1px solid rgb(226, 226, 226);
 	border-bottom: 1px solid transparent;
-	font-size: 20px;
+	font-size: 1.25em;
 
 	-webkit-transition: all 0.2s ease-in-out; /* Safari */
 	-moz-transition: all 0.2s ease-in-out;
@@ -112,7 +114,7 @@ body{
 }
 
 .footer{
-	font-size: 15px;
+	font-size: 0.95em;
 	text-align: center;
 	margin-top:10px;
 }
@@ -149,7 +151,7 @@ h1:after{
 }
 
 .body p{
-	font-size: 20px;
+	font-size: 1.25em;
 	text-indent: 50px;
 }
 
