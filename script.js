@@ -7,7 +7,7 @@
 			fixedClass = 'menu-fixed';
 
 			if(!$header.hasClass(fixedClass) && $doc.scrollTop() > $headerWrapper.position().top){
-				$headerWrapper.height($header.height()+1);
+				$headerWrapper.css('min-height', $header.height()+1);
 				$header.addClass(fixedClass);
 			}else if($header.hasClass(fixedClass) && $doc.scrollTop() <= $headerWrapper.position().top){
 				$header.removeClass(fixedClass);
