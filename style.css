@@ -10,7 +10,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background: url(images/horsebg.jpg) no-repeat center center fixed; 
+	background: url(images/horsebgcolor.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -111,7 +111,7 @@ body{
 	width: 1000px;
 	padding: 20px;
 	margin: 0 auto;
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 0.75);
 	box-sizing: border-box;
 	margin-top: 18px;
 }
