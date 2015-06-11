@@ -216,9 +216,7 @@ h1:after{
 		height: 140px;
 		width: 140px;
 	}
-	.last-news-content{
-		min-height: 120px;
-	}
+
 }
 
 @media all and (max-width:1070px) {
