@@ -1,6 +1,6 @@
 @font-face {
 	font-family: Cinzel;
-	src: url("rsc/cinzel.otf") format("opentype");
+	src: url("rsc/Znikomit.otf") format("opentype");
 }
 @font-face {
 	font-family: Elegant;
@@ -9,7 +9,7 @@
 
 @font-face {
 	font-family: CinzelEot;
-	src: url("rsc/CinzelEot.eot");
+	src: url("rsc/MadameKlara.eot");
 }
 @font-face {
 	font-family: ElegantEot;
@@ -19,7 +19,8 @@
 body{
 	margin: 0;
 	padding: 0;
-	background: url(images/horsebgcolor.jpg) no-repeat center center fixed; 
+	/*background: url(images/horsebgcolor.jpg) no-repeat center center fixed; */
+	background: whitesmoke;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -28,33 +29,42 @@ body{
 }
 
 .header{
-	text-align: center;
 	font-family: Cinzel, CinzelEot;
-	padding:30px;
+	padding: 10px;
 	background: rgba(255,255,255,1);
+	font-weight: 600;
+	border-bottom: 1px solid rgb(226, 226, 226);
 }
 
-.header>.logo{
+.header .logo{
 	border-radius: 100%;
 	border: 1px solid rgb(226, 226, 226);
 	vertical-align: middle;
 }
-.header>div{
-	display: inline-block;
-	vertical-align: middle;
-	text-align: left
+
+.header .header-wraper{
+	width: 1400px;
+  	margin: 0 auto;
 }
-.header>div>span{
+
+.header div.logo-name{
+	  display: inline-block;
+	  vertical-align: middle;
+	  text-align: left;
+	  margin-left: 10px;
+	  border-right: 1px solid rgb(210, 210, 210);
+	  padding: 5px 25px 5px 0;
+	  margin-right: 25px;
+}
+.header div>span{
 	display: block;
 	vertical-align: middle;
-	/*font-size: 50px;*/
-	font-size: 3.15em;
-	margin-left:40px;
+	font-size: 1.5em;
 }
 .header span.year-created{
-	font-size:1.25em;
-	font-weight: 600;
-	margin-left: 45px;
+	  font-size: 0.8em;
+	  font-weight: 600;
+	  margin-left: 2px;
 }
 
 .menu{
@@ -62,7 +72,6 @@ body{
 	
 	background: rgba(255, 255, 255, 0.6);
 	text-align: center;
-	border-top: 1px solid rgb(226, 226, 226);
 	border-bottom: 1px solid transparent;
 	font-size: 1.25em;
 
@@ -113,25 +122,28 @@ body{
 }
 
 .wrapper{
-	padding-bottom:10px;
+	padding-bottom:0px;
 }
 
 .body{
 	width: 1000px;
-	padding: 20px;
+
 	margin: 0 auto;
-	background: rgba(255, 255, 255, 0.75);
+	/*background: rgba(255, 255, 255, 0.75);*/
 	box-sizing: border-box;
 	margin-top: 18px;
 }
 
 .footer{
+	color: white;
+	background: rgb(39, 39, 39);
 	font-size: 0.95em;
 	text-align: center;
-	margin-top:10px;
+	padding: 20px;
+	margin-top: 10px;
 }
 .footer a, .footer a:link, .footer a:visited{
-	color: #010fc7;
+	color: #535FFF;
 	text-decoration: none;
 }
 .footer a:hover{
@@ -150,16 +162,8 @@ h1, h2, h3, h4, h5{
 
 h1{
 	font-size: 2.5em;
-	text-align: center;
-}
-h1:after{
-	content: "";
-	display: block;
-	background: transparent url(images/szlaczek.gif) no-repeat;
-	height: 15px;
-	background-position: center;
-	background-size: 265px 15px;
-	margin-bottom: 10px;
+	padding: 3px 0;
+	border-bottom: 1px solid rgb(210, 210, 210);;
 }
 
 .body p{
@@ -180,12 +184,26 @@ h1:after{
 	display: inline-block;
 }
 
+.last-news-row:hover{
+	transform: scale(1.03);
+}
+
 .last-news-row{
 	width: 250px;
 	text-align: left;
 	margin: 0 20px;
 	vertical-align: top;
 	font-size: 1.1em;
+	padding: 10px;
+	background: white;
+	cursor: default;
+	border: 1px solid rgb(228, 228, 228);
+
+	-webkit-transition: all 0.2s ease-in-out; /* Safari */
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .last-news-header{
 	font-weight: 600;
@@ -211,9 +229,9 @@ h1:after{
 	body{
 		font-size: 16px;
 	}
-	.header>.logo{
-		height: 160px;
-		width: 160px;
+	.header .logo{
+		height: 80px;
+		width: 80px;
 	}
 }
 
@@ -221,9 +239,9 @@ h1:after{
 	body{
 		font-size: 14px;
 	}
-	.header>.logo{
-		height: 140px;
-		width: 140px;
+	.header .logo{
+		height:80px;
+		width: 80px;
 	}
 
 	.last-news-content{
@@ -236,15 +254,15 @@ h1:after{
 	body{
 		font-size: 12px;
 	}
-	.header>.logo{
+	.header .logo{
 		height: 100px;
 		width: 100px;
 	}
-	.header>div{
+	.header div.logo-name{
 		display: block;
 		text-align: center;
 	}
-	.header>div>span{
+	.header div>span{
 		margin-left: 0;
 	}
 	.header span.year-created {
@@ -253,7 +271,7 @@ h1:after{
 	h1{
 		font-size: 2em;
 	}
-	.header>div>span{
+	.header div>span{
 		font-size: 2em;
 	}
 
