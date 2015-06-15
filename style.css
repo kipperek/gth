@@ -30,10 +30,11 @@ body{
 
 .header{
 	font-family: Cinzel, CinzelEot;
-	padding: 10px;
+	padding: 5px;
 	background: rgba(255,255,255,1);
 	font-weight: 600;
 	border-bottom: 1px solid rgb(226, 226, 226);
+	color: rgb(89, 89, 89);
 }
 
 .header .logo{
@@ -43,7 +44,7 @@ body{
 }
 
 .header .header-wraper{
-	width: 1400px;
+	text-align: center;
   	margin: 0 auto;
 }
 
@@ -53,8 +54,8 @@ body{
 	  text-align: left;
 	  margin-left: 10px;
 	  border-right: 1px solid rgb(210, 210, 210);
-	  padding: 5px 25px 5px 0;
-	  margin-right: 25px;
+	  padding: 5px 30px 5px 0;
+	  margin-right: 30px;
 }
 .header div>span{
 	display: block;
@@ -67,58 +68,34 @@ body{
 	  margin-left: 2px;
 }
 
-.menu{
-	font-family: Elegant, ElegantEot;
-	
-	background: rgba(255, 255, 255, 0.6);
-	text-align: center;
-	border-bottom: 1px solid transparent;
-	font-size: 1.25em;
-
-	-webkit-transition: all 0.2s ease-in-out; /* Safari */
-	-moz-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-
-.menu>span{
+.header .menu-header{
+	vertical-align: middle;
 	display: inline-block;
-	padding: 10px 15px;
+	font-size: 0.8em;
+	font-weight: 400;
+	font-family: Elegant;
+}
+.header .menu-header>span{
+	display: inline-block;
+	margin: 0 15px;
 	cursor: pointer;
 	border-bottom: 1px solid transparent;
-	position: relative;
-	top:1px;
-
-	-webkit-transition: all 0.2s ease-in-out; /* Safari */
-	-moz-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
 }
-.menu>span:hover{
+
+.header .menu-header>span:first-child{
+	margin-left: 0px;
+}
+
+.header .menu-header>span:hover{
 	border-bottom: 1px solid #010fc7;
 }
 
-.menu.menu-fixed{
-	position:fixed;
-	top:0;
-	width: 100%;
-	background: white;
-	border-bottom: 1px solid rgb(226, 226, 226);
-	border-top: none;
-}
-
-.menu.menu-fixed>span {
-	top: 0;
+.header-image{
+	height:300px;
+	background-image: url(images/archiwalne.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0 -50px;
 }
 
 .wrapper{
@@ -174,7 +151,7 @@ h1{
 .body p img{
 	width: 180px;
   	float: left;
-  	margin: 5px;
+  	margin: 10px;
 }
 .last-news{
 	text-align: center;
@@ -230,8 +207,8 @@ h1{
 		font-size: 16px;
 	}
 	.header .logo{
-		height: 80px;
-		width: 80px;
+		height: 64px;
+		width: 64px;
 	}
 }
 
@@ -240,12 +217,17 @@ h1{
 		font-size: 14px;
 	}
 	.header .logo{
-		height:80px;
-		width: 80px;
+		height:64px;
+		width: 64px;
 	}
 
 	.last-news-content{
 		min-height: 140px;
+	}
+
+	.header-image{
+		height:250px;
+		background-position: 0 -20px;
 	}
 
 }
@@ -255,8 +237,8 @@ h1{
 		font-size: 12px;
 	}
 	.header .logo{
-		height: 100px;
-		width: 100px;
+		height: 64px;
+		width: 64px;
 	}
 	.header div.logo-name{
 		display: block;
@@ -277,9 +259,33 @@ h1{
 
 	.body{
 		width: 100%;
+		padding:10px;
 	}
 
 	.last-news-content{
 		min-height: 100px;
+	}
+
+	.header-image{
+		height:150px;
+		background-position: 0 -0px;
+	}
+	.header div.logo-name{
+		border-right: none;
+		padding-right: 0;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.last-news-row{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media all and (max-width:1070px) {
+	.header-image{
+		height:100px !important;
+		background-position: 0 -0px;
 	}
 }
